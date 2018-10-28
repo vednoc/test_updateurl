@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Test userstyle.
+@namespace      github.com/vednoc/test_updateurl
+@version        0.1.0
+@description    Test userstyle.
+@author         vednoc
+@updateURL      https://raw.githubusercontent.com/vednoc/test_updateurl/master/test.user.css
+@updateURL      https://gitlab.com/vednoc/test_updateurl/raw/master/test.user.css
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+  /* Appends text on top of the navbar. */
+  body::before {
+    font-size: 2em;
+    content: 'v0.1.0' !important;
+  }
+}
